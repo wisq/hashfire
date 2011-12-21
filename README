@@ -1,0 +1,15 @@
+A simple client to paste data onto Campfire.
+Written in Haskell using GHC 7.0.3.
+
+You'll need to "cabal install" the following:
+
+	data-object-json
+	base64-string
+	http-enumerator
+
+Then edit the source code and put in your own domain and API key.
+Run "ghc --make hashfire" to get a binary.
+
+Usage:  hashfire <room ID> <message>
+
+Message can be "-", and it will read from standard input instead.
